@@ -1,0 +1,26 @@
+/*
+Average rail ticket prices for Trans-Siberian journeys
+/Trains/Trans-Siberian/Average-Ticket-Prices
+*/
+
+.row {
+	margin: 50px;
+}
+
+table.trains tr th,
+table.trains tr td {
+	text-align: center;
+	vertical-align: middle;
+}
+
+table.trains thead {
+	background-color: #E8E8EE;
+}
+
+table.trains thead > tr:first-child > th:first-child {
+	width: 50%;
+}
+
+table.trains tbody.route:nth-child(2n) {
+	background-color: #f7f7f7;
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Average-Ticket-Prices</title>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- jQuery 3.1.0 -->
+	<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
+
+	<link rel="stylesheet" href="trains-ticket-prices.css">
+
+	<!-- for IE -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+
+				<div class="table-responsive">
+					<table class="trains table table-bordered">
+						<thead>
+							<tr>
+								<th colspan="3">Fast Trains</th>
+								<th colspan="2">
+									<select class="currencySwitch">
+										<option selected="selected">GBP</option>
+										<option>EUR</option>
+										<option>USD</option>
+									</select>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">Route</th>
+								<th>Train</th>
+								<th>First Class</th>
+								<th>Second Class</th>
+							</tr>
+						</thead>
+						<tbody class="route">
+							<tr class="MosBei_4">
+								<td>Moscow</td>
+								<td>Beijing</td>
+								<td>4</td>
+								<td class="firstclass">&nbsp;</td>
+								<td class="secondclass">&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosIrk_4">
+								<td>Moscow</td>
+								<td>Irkutsk</td>
+								<td rowspan="2">4</td>
+								<td class="firstclass" rowspan="2">&nbsp;</td>
+								<td class="secondclass" rowspan="2">&nbsp;</td>
+							</tr>
+							<tr class="IrkBei_4">
+								<td>Irkutsk</td>
+								<td>Beijing</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosUlb_4">
+								<td>Moscow</td>
+								<td>Ulan-Bator</td>
+								<td>4</td>
+								<td class="firstclass" rowspan="2">&nbsp;</td>
+								<td class="secondclass" rowspan="2">&nbsp;</td>
+							</tr>
+							<tr class="UlbBei_24">
+								<td>Ulan-Bator</td>
+								<td>Beijing</td>
+								<td>24</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosIrk_4">
+								<td>Moscow</td>
+								<td>Irkutsk</td>
+								<td>4</td>
+								<td class="firstclass" rowspan="3">&nbsp;</td>
+								<td class="secondclass" rowspan="3">&nbsp;</td>
+							</tr>
+							<tr class="IrkUlb_6">
+								<td>Irkutsk</td>
+								<td>Ulan-Bator</td>
+								<td>6</td>
+							</tr>
+							<tr class="UlbBei_24">
+								<td>Ulan-Bator</td>
+								<td>Beijing</td>
+								<td>24</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosIrk_4">
+								<td>Moscow</td>
+								<td>Irkutsk</td>
+								<td>4</td>
+								<td class="firstclass" rowspan="4">&nbsp;</td>
+								<td class="secondclass" rowspan="4">&nbsp;</td>
+							</tr>
+							<tr class="IrkUlu_6">
+								<td>Irkutsk</td>
+								<td>Ulan-Ude</td>
+								<td>6</td>
+							</tr>
+							<tr class="UluUlb_362">
+								<td>Ulan-Ude</td>
+								<td>Ulan-Bator</td>
+								<td>362</td>
+							</tr>
+							<tr class="UlbBei_24">
+								<td>Ulan-Bator</td>
+								<td>Beijing</td>
+								<td>24</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosYek_100">
+								<td>Moscow</td>
+								<td>Yekaterinburg</td>
+								<td>016</td>
+								<td class="firstclass" rowspan="4">&nbsp;</td>
+								<td class="secondclass" rowspan="4">&nbsp;</td>
+							</tr>
+							<tr class="YekIrk_6">
+								<td>Yekaterinburg</td>
+								<td>Irkutsk</td>
+								<td>6</td>
+							</tr>
+							<tr class="IrkUlb_362">
+								<td>Irkutsk</td>
+								<td>Ulan-Bator</td>
+								<td>362</td>
+							</tr>
+							<tr class="UlbBei_24">
+								<td>Ulan-Bator</td>
+								<td>Beijing</td>
+								<td>24</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosYek_100">
+								<td>Moscow</td>
+								<td>Yekaterinburg</td>
+								<td>016</td>
+								<td class="firstclass" rowspan="5">&nbsp;</td>
+								<td class="secondclass" rowspan="5">&nbsp;</td>
+							</tr>
+							<tr class="YekIrk_6">
+								<td>Yekaterinburg</td>
+								<td>Irkutsk</td>
+								<td>6</td>
+							</tr>
+							<tr class="IrkUlu_6">
+								<td>Irkutsk</td>
+								<td>Ulan-Ude</td>
+								<td>6</td>
+							</tr>
+							<tr class="UluUlb_362">
+								<td>Ulan-Ude</td>
+								<td>Ulan-Bator</td>
+								<td>362</td>
+							</tr>
+							<tr class="UlbBei_24">
+								<td>Ulan-Bator</td>
+								<td>Beijing</td>
+								<td>24</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="table-responsive">
+					<table class="trains table table-bordered">
+						<thead>
+							<tr>
+								<th colspan="3">Firmeny Trains</th>
+								<th colspan="3">
+									<select class="currencySwitch">
+										<option selected="selected">GBP</option>
+										<option>EUR</option>
+										<option>USD</option>
+									</select>
+								</th>
+							</tr>
+							<tr>
+								<th colspan="2">Route</th>
+								<th>Train</th>
+								<th>First Class</th>
+								<th>Second Class Upper Berth</th>
+								<th>Second Class Lower Berth</th>
+							</tr>
+						</thead>
+						<tbody class="route">
+							<tr class="MosBei_4">
+								<td>Moscow</td>
+								<td>Beijing</td>
+								<td>4</td>
+								<td class="firstclass">&nbsp;</td>
+								<td class="secondupper">&nbsp;</td>
+								<td class="secondlower">&nbsp;</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosIrk_2">
+								<td>Moscow</td>
+								<td>Irkutsk</td>
+								<td>2</td>
+								<td class="firstclass" rowspan="2">&nbsp;</td>
+								<td class="secondupper" rowspan="2">&nbsp;</td>
+								<td class="secondlower" rowspan="2">&nbsp;</td>
+							</tr>
+							<tr class="IrkBei_4">
+								<td>Irkutsk</td>
+								<td>Beijing</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosUlb_6">
+								<td>Moscow</td>
+								<td>Ulan-Bator</td>
+								<td>6</td>
+								<td class="firstclass" rowspan="2">&nbsp;</td>
+								<td class="secondupper" rowspan="2">&nbsp;</td>
+								<td class="secondlower" rowspan="2">&nbsp;</td>
+							</tr>
+							<tr class="UlbBei_4">
+								<td>Ulan-Bator</td>
+								<td>Beijing</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosIrk_2">
+								<td>Moscow</td>
+								<td>Irkutsk</td>
+								<td>2</td>
+								<td class="firstclass" rowspan="3">&nbsp;</td>
+								<td class="secondupper" rowspan="3">&nbsp;</td>
+								<td class="secondlower" rowspan="3">&nbsp;</td>
+							</tr>
+							<tr class="IrkUlb_6">
+								<td>Irkutsk</td>
+								<td>Ulan-Bator</td>
+								<td>6</td>
+							</tr>
+							<tr class="UlbBei_4">
+								<td>Ulan-Bator</td>
+								<td>Beijing</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosIrk_2">
+								<td>Moscow</td>
+								<td>Irkutsk</td>
+								<td>2</td>
+								<td class="firstclass" rowspan="4">&nbsp;</td>
+								<td class="secondupper" rowspan="4">&nbsp;</td>
+								<td class="secondlower" rowspan="4">&nbsp;</td>
+							</tr>
+							<tr class="IrkUlu_2">
+								<td>Irkutsk</td>
+								<td>Ulan-Ude</td>
+								<td>2</td>
+							</tr>
+							<tr class="UluUlb_362">
+								<td>Ulan-Ude</td>
+								<td>Ulan-Bator</td>
+								<td>362</td>
+							</tr>
+							<tr class="UlbBei_4">
+								<td>Ulan-Bator</td>
+								<td>Beijing</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosYek_2">
+								<td>Moscow</td>
+								<td>Yekaterinburg</td>
+								<td>2</td>
+								<td class="firstclass" rowspan="4">&nbsp;</td>
+								<td class="secondupper" rowspan="4">&nbsp;</td>
+								<td class="secondlower" rowspan="4">&nbsp;</td>
+							</tr>
+							<tr class="YekIrk_2">
+								<td>Yekaterinburg</td>
+								<td>Irkutsk</td>
+								<td>2</td>
+							</tr>
+							<tr class="IrkUlb_362">
+								<td>Irkutsk</td>
+								<td>Ulan-Bator</td>
+								<td>362</td>
+							</tr>
+							<tr class="UlbBei_4">
+								<td>Ulan-Bator</td>
+								<td>Beijing</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+						<tbody class="route">
+							<tr class="MosYek_2">
+								<td>Moscow</td>
+								<td>Yekaterinburg</td>
+								<td>2</td>
+								<td class="firstclass" rowspan="5">&nbsp;</td>
+								<td class="secondupper" rowspan="5">&nbsp;</td>
+								<td class="secondlower" rowspan="5">&nbsp;</td>
+							</tr>
+							<tr class="YekIrk_2">
+								<td>Yekaterinburg</td>
+								<td>Irkutsk</td>
+								<td>2</td>
+							</tr>
+							<tr class="IrkUlu_2">
+								<td>Irkutsk</td>
+								<td>Ulan-Ude</td>
+								<td>2</td>
+							</tr>
+							<tr class="UluUlb_362">
+								<td>Ulan-Ude</td>
+								<td>Ulan-Bator</td>
+								<td>362</td>
+							</tr>
+							<tr class="UlbBei_4">
+								<td>Ulan-Bator</td>
+								<td>Beijing</td>
+								<td>4</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<script src="trains-ticket-prices.js"></script>
+</body>
+
+</html>
